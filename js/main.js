@@ -11,9 +11,9 @@ function displayInfo(){
   var formValue = document.getElementById("field").value.toLowerCase();
 
   if(!formValue) {
-    var innerBox = 'Ops!, please enter at least one value! For example,"Mars"';
+    var innerBox = 'Ops! Please, enter at least one value. For example, "Mars".';
   } else if (obj[formValue] === undefined) {
-    var innerBox = "Sorry, we didn't discover that planet yet";
+    var innerBox = "Sorry, we didn't discover that planet yet.";
   } else {
     var innerBox = obj[formValue][0] + " has a diameter of " + obj[formValue][1] + "km. It's located at almost " + obj[formValue][2] + "km from the Sun. " + obj[formValue][0] + " takes " + obj[formValue][3] + " to turn around the Sun.";
   }
