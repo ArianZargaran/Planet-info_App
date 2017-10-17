@@ -1,31 +1,14 @@
-@charset "UTF-8";
+* { box-sizing: border-box;}
 
-
-header {
-    background-color:rgba(33, 33, 33, 0.9);
-    color:#ffffff;
-    display:block;
-    font: 14px/1.3 Arial,sans-serif;
-    height:50px;
-    position:relative;
-    z-index:-2;
-}
-h2{
-    margin-top: 30px;
-    text-align: center;
-}
-header h2{
-    font-size: 22px;
-    margin: 0 auto;
-    padding: 10px 0;
-    width: 80%;
-    text-align: center;
-}
-header a, a:visited {
-    text-decoration:none;
-    color:#fcfcfc;
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  align-items: center;
+  font-family: Arial, sans-serif;
 }
 
+//The Sky
 @keyframes move-twink-back {
     from {background-position:0 0;}
     to {background-position:-10000px 5000px;}
@@ -100,37 +83,34 @@ header a, a:visited {
 }
 //end sky//
 
-
-* { box-sizing: border-box;}
-
-body {
-  display: flex;
-  flex-direction: column;
-  padding: 25px;
-  align-items: center;
-  font-family: Arial, sans-serif;
+//h1//
+.tp_title {
+  color: #fff;
+  margin: 50px;
+  font-size: 40px;
+  font-weight: 900;
 }
 
+//form/planet//
 .tp_form {
-  padding: 75px 40px;
+  padding: 86px 25px 60px;
   display: inline-block;
-background: radial-gradient(circle at center, #5FA47C 0%, green 62%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   border-radius: 100%;
   font-size: 22px;
-    border: 1px solid green;
+  background: linear-gradient(to bottom right, #fecf4e 1%, #a62a44 50%, #310441 100%);
   .tp_form-label{
     color: #fff;
   }
   .tp_form-field {
     display: block;
-    margin: 30px auto 50px;
+    margin: 30px auto;
     width: 86%;
     border-radius: 100px;
     border: none;
     outline: none;
     height: 30px;
     font-size: 15px;
-    border: .5px solid #006E2E;
+    border: .5px solid #591442;
     color: #006E2E;
     padding: 0 10px;
   }
@@ -145,12 +125,15 @@ background: radial-gradient(circle at center, #5FA47C 0%, green 62%); /* W3C, IE
     border-radius: 5px;
     outline: none;
     cursor: pointer;
-    color: #006E2E;
     &:active {
           transform: scale(.97);
         }
     }
   }
+
+.tp_form-submit:active {
+      transform: scale(.97);
+    }
 
 .tp_info {
   margin-top: 15px;
@@ -158,8 +141,8 @@ background: radial-gradient(circle at center, #5FA47C 0%, green 62%); /* W3C, IE
   text-align: center;
   padding: 30px;
   border-radius: 5px;
-  border: .5px solid #006E2E;
-  box-shadow: .1px .1px .1px #006E2E, -.1px -.1px .1px #006E2E;
+  border: .5px solid #591442;
+  box-shadow: .1px .1px .1px #591442, -.1px -.1px .1px #006E2E;
   position: relative;
   background: #000;
   p {
@@ -168,17 +151,3 @@ background: radial-gradient(circle at center, #5FA47C 0%, green 62%); /* W3C, IE
     line-height: 41px;
   }
 }
-
-.planet-ring {
-		width:360px;
-		height:40px;
-		position:relative;
-		border-top: 10px solid transparent;
-		border-bottom: 10px solid #5FA47C;
-		border-left: 10px solid #5FA47C;
-		border-right: 10px solid #5FA47C;
-		border-radius: 100%;
-		transform: rotate(-30deg);
-    top: 180px;
-    right: 5px;
-	}

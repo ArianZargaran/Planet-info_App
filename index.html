@@ -3,34 +3,33 @@
 <head>
   <meta charset="UTF-8">
     <!-- META Title & Description -->
-  <title>#</title>
+  <title>The Astro App</title>
   <meta name="description" content="#">
     <!-- META Viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Favorite icon -->
-  <link rel="shortcut icon" href="#.ico">
+  <link rel="shortcut icon" href="favicon.ico">
     <!-- Styles -->
   <link href="css/reset.css" rel="stylesheet" type="text/css">
   <link href="css/main.css" rel="stylesheet" type="text/css">
 
-  <script src="js/#.js"></script>
 </head>
 <body class="body">
 
-    <div class="stars"></div>
-    <div class="twinkling"></div>
-    <div class="clouds"></div>
+  <div class="stars"></div>
+  <div class="twinkling"></div>
+  <div class="clouds"></div>
 
-    <div class="tp_container">
-      <div class="planet-ring"></div>
-      <form action="#" id="form" class="tp_form">
-        <label for="field" class="tp_form-label">What planet are you from?<br></label>
-        <input id="field" type="text" class="tp_form-field">
-        <input type="button" onclick="displayInfo()" id="submit" value="submit" class="tp_form-submit">
-      </form>
-    </div>
-    <section id="section" class="tp_info-section"></section>
+  <h1 class="tp_title">The Astro App</h1>
+  <div class="tp_container">
+    <form action="#" id="form" class="tp_form planet">
+      <label for="field" class="tp_form-label">What planet are you from?<br></label>
+      <input id="field" type="text" class="tp_form-field">
+      <input type="button" onclick="displayInfo()" id="submit" value="submit" class="tp_form-submit">
+    </form>
+  </div>
+  <section id="section" class="tp_info-section"></section>
 
 <script src='js/main.js'></script>
 

@@ -11,7 +11,7 @@ function displayInfo(){
   var formValue = document.getElementById("field").value.toLowerCase();
 
   if(!formValue) {
-    var innerBox = "Ops!, please enter at least a value!";
+    var innerBox = 'Ops!, please enter at least one value! For example,"Mars"';
   } else if (obj[formValue] === undefined) {
     var innerBox = "Sorry, we didn't discover that planet yet";
   } else {
